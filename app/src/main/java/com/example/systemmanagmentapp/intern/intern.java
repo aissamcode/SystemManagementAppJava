@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class intern extends AppCompatActivity {
 
     //@aissamcode
+    //this is intern profile info
     TextView loggedasintern,nameintern,fieldintern,gradesintern,genderintern;
     Button exitintern,backintern;
     @Override
