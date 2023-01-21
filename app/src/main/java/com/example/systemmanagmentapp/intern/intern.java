@@ -3,6 +3,7 @@ package com.example.systemmanagmentapp.intern;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -42,5 +43,18 @@ public class intern extends AppCompatActivity {
         genderintern.setText(arrayList.get(2));
         fieldintern.setText(arrayList.get(3));
         gradesintern.setText(arrayList.get(4).toString());
+        exitintern.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        backintern.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finishAffinity(); // Close all activity's
+                System.exit(0);
+            }
+        });
     }
 }
