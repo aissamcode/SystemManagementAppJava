@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    tools:context=".former.addgradesformer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="5">
+
+        <Spinner
+            android:id="@+id/spinnerintern"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:spinnerMode="dialog"
+            android:gravity="center"
+            android:layout_height="0dp">
+
+        </Spinner>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter bac grades"
+            app:shapeAppearance="@style/Cut">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/interngradeformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_height="0dp"
+            android:id="@+id/addgradesintern"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:fontFamily="@font/myfont1"
+            android:text="ADD"
+            android:textColor="#027dfd"
+            android:textSize="55sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/backgrades"
+                android:textStyle="bold"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/backicon"
+                android:fontFamily="@font/myfont1"
+                android:text="back"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/exitgrades"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/exiticonn"
+                android:fontFamily="@font/myfont1"
+                android:text="exit"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

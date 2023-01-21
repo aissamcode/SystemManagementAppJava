@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context=".director.formerD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="8"
+        android:padding="10dp"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_height="0dp">
+            <TextView
+                android:gravity="center"
+                android:textColor="#027dfd"
+                android:fontFamily="@font/myfont1"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Select Your choice" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/addformer"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/adduser"
+                android:fontFamily="@font/myfont1"
+                android:text="Add Former"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/listformer"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableLeft="@drawable/listicon"
+                android:fontFamily="@font/myfont1"
+                android:text="Liste"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="6"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:id="@+id/layoutformer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

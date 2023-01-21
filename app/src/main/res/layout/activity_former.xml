@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundimage"
+    tools:context=".former.former">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/myfont1"
+                android:gravity="center"
+
+                android:text="Select Your choice"
+                android:textColor="@color/textblue"
+                android:textSize="35sp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/internF"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/addstagiaireicon"
+                android:fontFamily="@font/myfont1"
+                android:text="intern"
+                android:textStyle="bold"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/addgradeformer"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/gradesicon"
+                android:fontFamily="@font/myfont1"
+                android:textStyle="bold"
+                android:text="add grades"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/calenderformer"
+                android:textStyle="bold"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/calendaricon"
+                android:fontFamily="@font/myfont1"
+                android:text="calendar"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/information"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:drawableTop="@drawable/editicon"
+                android:fontFamily="@font/myfont1"
+                android:text="information"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+            <Button
+                android:id="@+id/backformer"
+                android:textStyle="bold"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:drawableTop="@drawable/backicon"
+                android:fontFamily="@font/myfont1"
+                android:text="back"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/exitformer"
+                android:gravity="center"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:drawableTop="@drawable/exiticonn"
+                android:fontFamily="@font/myfont1"
+                android:text="exit"
+                android:textColor="@color/textblue"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
